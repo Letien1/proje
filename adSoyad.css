@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-direction: column;
+ }
+ .kutu1{
+    position: relative;
+    width: 250px;
+ }
+ .kutu1 input{
+    width: 100px;
+    padding: 10px;
+    border: 1px solid rgb(255,255, 255,0.7);
+    background:rgb(0,0,0);
+    border-radius: 5px;
+    outline: none;
+    color:#fff;
+    font-size: 1em;
+    transition: 0.5s;
+ }
+ .kutu1 span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    color:rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+ }
+ .kutu1 input:focus~span{
+    color: solid #00ccff;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: rgb(0,0,0);
+    border-left: 1px solid #00ccff;
+    border-right: 1px solid #00ccff;
+    letter-spacing: 0.2em;
+ }
+
+ .kutu1 input:focus{
+    border: 1px solid #00ccff;
+ }
